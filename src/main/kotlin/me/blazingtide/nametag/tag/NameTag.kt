@@ -67,11 +67,6 @@ class NameTag(private val player: Player, private val api: NametagAPI) {
             team.prefix = prefixTranslated
         }
 
-        val color = api.adapter.getColor(player, target)
-        if (color != null) {
-            team.color = color
-        }
-
         if (suffixTranslated != null && api.sizeConstraints) {
             team.suffix = suffixTranslated.substring(0, min(16, suffixTranslated.length))
         } else if (suffixTranslated != null) {

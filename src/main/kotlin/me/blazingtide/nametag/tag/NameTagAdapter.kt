@@ -20,10 +20,6 @@ interface NameTagAdapter {
 
     }
 
-    fun getColor(player: Player, target: Player): ChatColor? {
-        return null
-    }
-
     /**
      * Returns the team name, meant for sorting player list name purposes
      *
